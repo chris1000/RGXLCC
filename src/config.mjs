@@ -1,15 +1,15 @@
 export const SITE = {
 	name: 'RGX LLC',
 
-	origin: 'https://astrowind.vercel.app',
+	origin: 'https://rgxfrt.com/',
 	basePathname: '/',
 	trailingSlash: true,
 
 	title: 'RGX LLC',
-	description: '🚀 AstroWind is a free and ready to start template to make your website using Astro and Tailwind CSS.',
+	description: 'When it comes to Freight Services, RGX has your back. We currently serve Mississippi and Tennessee and offer affordable rates and convenient terms. Contact RGX today for a Free Quote!',
 
-	googleAnalyticsId: false, // or "G-XXXXXXXXXX",
-	googleSiteVerificationId: 'orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M',
+	googleAnalyticsId: "G-5ZNHJFXMDV",
+	googleSiteVerificationId: 'B7BvUqoqk8cwQYsqhiSkVF-R7p2-I5Co9K85aoAEoCA',
 };
 
 export const BLOG = {
