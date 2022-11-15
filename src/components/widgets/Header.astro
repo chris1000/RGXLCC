@@ -1,0 +1,73 @@
+---
+import { Icon } from 'astro-icon';
+import Logo from '~/components/atoms/Logo.astro';
+import ToggleMenu from '~/components/core/ToggleMenu.astro';
+
+import { getHomePermalink } from '~/utils/permalinks';
+---
+
+<header
+	class="sticky top-0 z-40 flex-none mx-auto w-full bg-white dark:bg-slate-900 dark:md:bg-slate-900 border-b dark:border-b-1"
+	id="header"
+>
+	<div class="py-3 px-3 mx-auto w-full md:flex justify-between max-w-6xl md:px-4">
+		<div class="flex justify-between">
+			<a class="flex items-center" href={getHomePermalink()}>
+				<Logo />
+			</a>
+			<div class="flex items-center md:hidden">
+				<a
+					href="#contact"
+					rel="noopener"
+				>
+					<Icon name="tabler:phone" class="w-5 h-5 mr-1 -ml-1.5" />
+				</a>
+				<ToggleMenu />
+			</div>
+		</div>
+
+		<nav
+			class="items-center w-full md:w-auto hidden md:flex text-gray-600 dark:text-slate-200 h-screen md:h-auto"
+			aria-label="Main navigation"
+		>
+			<ul class="flex flex-col pt-8 md:pt-0 md:flex-row md:self-center w-full md:w-auto text-xl md:text-base">
+				<li>
+					<a
+						class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
+						href="#home">Home</a
+					>
+				</li>
+				<li>
+					<a
+						class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
+						href="#aboutus">About Us</a
+					>
+				</li>
+				<li>
+					<a
+						class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
+						href="#contact">Contact Us</a
+					>
+				</li>
+			</ul>
+		</nav>
+		<nav
+			class="items-center w-full md:w-auto hidden md:flex text-gray-600 dark:text-slate-200 h-screen md:h-auto"
+			aria-label="Secondary navigation"
+		>
+			<div class="">
+				<div class="hidden items-center md:flex">
+					<div class="flex w-full sm:w-auto">
+						<a
+							class="btn text-white border border-primary-600 bg-primary-600 hover:bg-primary-800 hover:border-primary-800 sm:mb-0 w-full"
+							href="#contact"
+							rel="noopener"
+						>
+							<Icon name="tabler:mail" class="w-5 h-5 mr-1 -ml-1.5" /> Get a Free Quote
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</div>
+</header>

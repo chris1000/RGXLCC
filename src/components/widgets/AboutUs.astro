@@ -1,0 +1,39 @@
+---
+import Picture from '~/components/core/Picture.astro';
+---
+<section class="scroll-mt-20 mx-12 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-6xl" id="aboutus">
+	<div class="grid gap-6 row-gap-10 md:grid-cols-2">
+		<div class="md:pb-6 md:pr-16">
+			<h2 class="mb-8 text-3xl lg:text-4xl font-bold font-heading">About Us</h2>
+			<div class="column">
+				<p class="text-md mb-8">
+					RGX Freight Services operates a dedicated 24/7/365 staffed expedited operation serving Mississippi and
+					Tennessee. Our division primarily operates Sprinters, cube trucks, and straight trucks with singles and teams.
+					We also work with over 70 top expedite carriers in the United States and Canada that are fully integrated with
+					our computer system to offer seamless coverage for your critical ground shipments.
+				</p>
+				<ul class="list-disc">
+					<li>48 State and Canadian Coverage</li>
+					<li>Cargo Vans, Sprinters and Straight Trucks</li>
+					<li>Expedite Tractor Trailers</li>
+					<li>All Drivers are TSA Approved</li>
+					<li>Late Model Equipment-All GPS Tracked</li>
+					<li>In cab scanning for fast P.O.D.'s</li>
+					<li>Staffed 24/7/365</li>
+					<li>Hazmat Authority</li>
+					<li>Interstate and Intrastate Authorities</li>
+				</ul>
+			</div>
+		</div>
+		<div class="relative">
+			<Picture
+				class="inset-0 object-cover object-center w-full md:absolute md:h-full bg-gray-400 dark:bg-slate-700"
+				src={import('~/assets/images/van.jpg')}
+				widths={[400, 768]}
+				sizes="(max-width: 768px)"
+				alt="Van Driving"
+				aspectRatio="3:5"
+			/>
+		</div>
+	</div>
+</section>
