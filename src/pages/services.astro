@@ -3,9 +3,10 @@ import { SITE } from '~/config.mjs';
 import { getCanonical, getHomePermalink } from '~/utils/permalinks';
 import Layout from '~/layouts/PageLayout.astro';
 
-import Hero from '~/components/widgets/Hero.astro';
+import HeroServices from '~/components/widgets/HeroServices.astro';
 import Contact from '~/components/widgets/Contact.astro';
 import AboutUs from '~/components/widgets/AboutUs.astro';
+import BasicServices from '~/components/widgets/BasicServices.astro';
 
 const meta = {
 	title: SITE.title,
@@ -15,7 +16,7 @@ const meta = {
 ---
 
 <Layout {meta}>
-	<Hero />
-	<AboutUs />
+	<HeroServices />
+	<BasicServices />
 	<Contact />
 </Layout>
