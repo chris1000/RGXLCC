@@ -1,0 +1,73 @@
+---
+import Picture from '~/components/core/Picture.astro';
+---
+
+<section class="scroll-mt-20 mx-auto py-16 px-16 lg:px-20 lg:py-20 max-w-full bg-white" id="services">
+	<div class="mb-10 md:mb-12">
+		<h2 class="mb-8 text-3xl lg:text-4xl font-bold font-heading -ml-4">Services</h2>
+	</div>
+	<div class="grid gap-6 row-gap-10 md:grid-cols-2">
+		<div class="flex flex-row">
+			<div>
+				<h3 class="mb-3 -ml-4 text-2xl lg:text-2xl font-bold">Expedite</h3>
+				<p class="-ml-4">
+					RGX operates a dedicated 24/7/365 staffed expedite team serving the United States and Ontario, Canada. The
+					company has access to a fleet of 10,000 vehicles consisting primarily of sprinters, trucks, and straight
+					trucks with both singles and teams. We also work with over 70 top expedite carriers in the United States and
+					Canada that are fully integrated with our computer system to offer seamless coverage for your critical ground
+					shipments.
+				</p>
+				<ul class="list-disc pt-5">
+					<li>48 State and Canadian Coverage</li>
+					<li>Cargo Vans, Sprinters, and Straight Trucks</li>
+					<li>Expedite Tractor Trailers</li>
+					<li>Access to TSA-Approved Drivers</li>
+					<li>Late Model Equipment-All G.P.S. Tracked</li>
+					<li>In-cab scanning for fast P.O.D.s</li>
+					<li>Staffed 24/7/365</li>
+					<li>Hazmat Authority</li>
+				</ul>
+			</div>
+		</div>
+		<div class="relative">
+			<Picture
+				class="inset-0 object-cover object-center w-full md:absolute md:h-full"
+				src={import('~/assets/images/van.png')}
+				widths={[768]}
+				sizes="width: 768px"
+				alt="Van Driving"
+				aspectRatio="1:1"
+			/>
+		</div>
+	</div>
+	<div class="grid gap-6 pt-20 row-gap-10 md:grid-cols-2">
+		<div class="flex flex-row">
+			<div>
+				<h3 class="mb-3 -ml-4 text-2xl lg:text-2xl font-bold">Brokerage</h3>
+				<p class="-ml-4">
+					RGX operates a dedicated 24/7/365 staffed truckload brokerage team. The dedicated group operates in the US,
+					Canada, and Mexico. With our technology platform, we can connect the carriers for online tracking.
+				</p>
+				<ul class="list-disc pt-5">
+					<li>US & Canadian Coverage</li>
+					<li>Short Haul and Local Service</li>
+					<li>Dedicated Long Haul Service</li>
+					<li>100% 53ft Air Ride Trailers</li>
+					<li>Late Model Equipment</li>
+					<li>In-cab scanning for fast P.O.D.s</li>
+					<li>Staffed 24/7/365</li>
+				</ul>
+			</div>
+		</div>
+		<div class="relative">
+			<Picture
+				class="inset-0 object-contain object-center w-full md:absolute md:h-full"
+				src={import('~/assets/images/18-wheeler.png')}
+				widths={[500, 768]}
+				sizes="(max-width: 768px)"
+				alt="Van Driving"
+				aspectRatio="16:9"
+			/>
+		</div>
+	</div>
+</section>

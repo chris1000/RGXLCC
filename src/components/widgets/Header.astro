@@ -6,21 +6,14 @@ import ToggleMenu from '~/components/core/ToggleMenu.astro';
 import { getHomePermalink } from '~/utils/permalinks';
 ---
 
-<header
-	class="sticky top-0 z-40 flex-none mx-auto w-full bg-white dark:bg-slate-900 dark:md:bg-slate-900 border-b dark:border-b-1"
-	id="header"
->
+<header class="sticky top-0 z-40 flex-none mx-auto w-full bg-[#0a112d]" id="header">
 	<div class="py-3 px-3 mx-auto w-full md:flex justify-between max-w-6xl md:px-4">
 		<div class="flex justify-between">
 			<a class="flex items-center" href={getHomePermalink()}>
 				<Logo />
 			</a>
 			<div class="flex items-center md:hidden">
-				<a
-					href="#contact"
-					rel="noopener"
-					title="Contact"
-				>
+				<a href="#contact" rel="noopener" title="Contact">
 					<Icon name="tabler:phone" class="w-5 h-5 mr-1 -ml-1.5" />
 				</a>
 				<ToggleMenu />
@@ -28,25 +21,25 @@ import { getHomePermalink } from '~/utils/permalinks';
 		</div>
 
 		<nav
-			class="items-center w-full md:w-auto hidden md:flex text-gray-600 dark:text-slate-200 h-screen md:h-auto"
+			class="items-center w-full md:w-auto hidden md:flex text-white dark:text-slate-200 h-screen md:h-auto"
 			aria-label="Main navigation"
 		>
 			<ul class="flex flex-col pt-8 md:pt-0 md:flex-row md:self-center w-full md:w-auto text-xl md:text-base">
 				<li>
 					<a
-						class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
-						href="#home">Home</a
-					>
-				</li>
-				<li>
-					<a
-						class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
+						class="font-medium hover:text-white lg:hover:underline dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
 						href="#aboutus">About Us</a
 					>
 				</li>
 				<li>
 					<a
-						class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
+						class="font-medium hover:text-white lg:hover:underline dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
+						href="#services">Services</a
+					>
+				</li>
+				<li>
+					<a
+						class="font-medium hover:text-white lg:hover:underline dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
 						href="#contact">Contact Us</a
 					>
 				</li>
