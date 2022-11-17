@@ -1,11 +1,11 @@
 export const SITE = {
-	name: 'RGX LLC',
+	name: 'RGX',
 
 	origin: 'https://rgxfrt.com/',
 	basePathname: '/',
 	trailingSlash: false,
 
-	title: 'RGX LLC',
+	title: 'RGX',
 	description: 'When it comes to Freight Services, RGX has your back. We currently serve Mississippi and Tennessee and offer affordable rates and convenient terms. Contact RGX today for a Free Quote!',
 
 	googleAnalyticsId: "G-5ZNHJFXMDV",
