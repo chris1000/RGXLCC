@@ -28,7 +28,7 @@ import Picture from '~/components/core/Picture.astro';
 						<div class="flex w-full sm:w-auto">
 							<a
 								class="btn text-white bg-gray-900 hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-800 w-full"
-								href="#aboutus">Learn more</a
+								href="/services">Services</a
 							>
 						</div>
 					</div>
@@ -37,12 +37,12 @@ import Picture from '~/components/core/Picture.astro';
 			<div>
 				<div class="relative mb-8 m-auto max-w-3xl">
 					<Picture
-						src={import('~/assets/images/default.jpg')}
-						class="mx-auto rounded-md shadow-lg bg-gray-400 dark:bg-slate-700 w-full"
-						widths={[400, 768]}
-						sizes="(max-width: 767px) 400px, 768px"
+						src={import('~/assets/images/map.png')}
+						class="mx-auto rounded-md shadow-lg bg-gray-700 dark:bg-slate-700 w-full"
+						widths={[768]}
+						sizes="(max-width: 768px)"
 						alt="Hero Image"
-						aspectRatio="21:9"
+						aspectRatio="16:9"
 						loading="eager"
 					/>
 				</div>
